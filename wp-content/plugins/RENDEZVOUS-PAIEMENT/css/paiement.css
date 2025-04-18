@@ -1,0 +1,66 @@
+.paiement-page {
+    background-color: #ffffff; 
+    padding: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    max-width: 500px; 
+    width: 100%;
+  }
+  .paiement-page h2 {
+    text-align: center; 
+    margin-bottom: 20px; 
+    color: #0073aa;
+  }
+  .paiement-page h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  .paiement-page span {
+    color: #0073aa;
+  }
+  .paiement-page p {
+    margin-bottom: 10px;
+  }
+  
+  .paiement-page label {
+    display: block; /* Make labels stack on top of inputs */
+    margin-bottom: 5px;
+  }
+  
+  .paiement-page input[type="text"] {
+    width: calc(100% - 12px);  /* Full width with padding/border accounted */
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+  
+  .paiement-page button[type="submit"] {
+    width: 100%; 
+    padding: 10px; 
+    background-color: #0073aa; 
+    color: white; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    transition: background-color 0.3s;
+  }
+  
+  .paiement-page button[type="submit"]:hover {
+    background-color: #0069d9; /* Darker blue */
+  }
+  
+  /* Optional: Add error styling */
+  .paiement-page .error-message {
+    color: red;
+    margin-top: 5px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 450px) {
+    .paiement-page {
+      width: 90%;
+    }
+  }

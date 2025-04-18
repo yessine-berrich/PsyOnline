@@ -1,0 +1,116 @@
+.paiement {
+    max-width: 900px; /* Set a maximum width */
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    overflow-x: auto; /* Enable horizontal scrolling if the table is too wide */
+  }
+  
+  .paiement h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333; /* Darker heading color */
+  }
+  
+  .paiement table {
+    width: 100%;
+    border-collapse: collapse; /* Collapse table borders */
+    margin-bottom: 20px;
+  }
+  
+  .paiement th, .paiement td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd; /* Light border for rows */
+  }
+  
+  .paiement th {
+    background-color: #f2f2f2; /* Light gray background for header */
+    font-weight: bold;
+    text-align: center; /* Center header text */
+  }
+  
+  .paiement tr:hover {
+    background-color: #f5f5f5; /* Highlight rows on hover */
+  }
+  
+  .paiement a {
+    color: #007bff; /* Blue link color */
+    text-decoration: none; /* Remove underlines */
+    padding: 5px 10px; /* Add some padding around the link */
+    border: 1px solid #007bff; /* Add a border */
+    border-radius: 3px; /* Add rounded corners */
+    margin-right: 5px; /* Add some space between links */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Smooth transition */
+  }
+  
+  .paiement a:hover {
+    background-color: #007bff; /* Blue background on hover */
+    color: white; /* White text on hover */
+    border-color: #0069d9; /* Darker blue border on hover */
+  }
+  
+  .paiement a.delete-link { /* Specific style for delete link */
+      color: #dc3545; /* Red color for delete */
+      border-color: #dc3545;
+  }
+  
+  .paiement a.delete-link:hover {
+      background-color: #dc3545;
+      color: white;
+      border-color: #c30010; /* Darker red on hover */
+  }
+  
+  
+  .paiement .payee { /* Style for "payee" status */
+      color: green;
+      font-weight: bold;
+  }
+  
+  /* Responsive adjustments (example) */
+  @media (max-width: 600px) {
+    .paiement table {
+      font-size: 14px; /* Reduce font size on smaller screens */
+    }
+  
+    .paiement th, .paiement td {
+      padding: 8px; /* Reduce padding */
+    }
+  
+    .paiement a {
+      font-size: 14px; /* Reduce link font size */
+    }
+  }
+
+
+  h3 {
+    font-size: 18px; /* Taille de police */
+    font-weight: bold; /* Poids de la police */
+    color: #333; /* Couleur du texte */
+    margin: 20px 0; /* Espacement autour de l'élément */
+    padding: 10px; /* Espacement interne */
+    border-left: 5px solid #4CAF50; /* Bordure à gauche pour attirer l'attention */
+    background-color: #f9f9f9; /* Couleur de fond */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Alignement du texte et du lien */
+    border-radius: 5px; /* Coins arrondis */
+}
+
+h3 a {
+    color: #4CAF50; /* Couleur du lien */
+    text-decoration: none; /* Supprime la décoration du lien */
+    font-weight: normal; /* Poids normal du lien */
+    font-size: 16px; /* Taille de la police du lien */
+    border: 1px solid #4CAF50; /* Bordure du lien */
+    padding: 5px 10px; /* Espacement interne du lien */
+    border-radius: 5px; /* Coins arrondis du lien */
+    transition: background-color 0.3s, color 0.3s; /* Animation sur hover */
+}
+
+h3 a:hover {
+    background-color: #4CAF50; /* Fond du lien au survol */
+    color: white; /* Couleur du texte au survol */
+}

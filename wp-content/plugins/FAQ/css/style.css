@@ -1,0 +1,61 @@
+/* Style général de la FAQ */
+.faq-dynamique {
+  font-family: 'Arial', sans-serif;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+/* Style pour chaque item de la FAQ */
+.faq-item {
+  margin-bottom: 15px;
+  overflow: hidden;
+  background-color: white;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  transition: transform 0.3s ease;
+}
+
+.faq-item:hover {
+  transform: scale(1.02);
+}
+
+/* Style pour le titre (summary) */
+.faq-item summary {
+  font-weight: bold;
+  font-size: 1.2em;
+  padding: 15px;
+  background-color: white;
+  cursor: pointer;
+  border-bottom: 1px solid #e0e0e0;
+  outline: none;
+}
+
+.faq-item summary:hover {
+  background-color: #f9f9f9;
+}
+
+/* Style pour le contenu de la réponse */
+.faq-item p {
+  padding: 15px;
+  font-size: 1em;
+  line-height: 1.5;
+  color: #555;
+  margin: 0;
+  background-color: #fafafa;
+}
+
+/* Animation lors de l'ouverture des détails */
+details[open] summary {
+  background-color: #f0f0f0;
+}
+
+/* Suppression des styles par défaut des navigateurs */
+details {
+  display: block;
+}
+
+summary {
+  list-style: none;
+  outline: none;
+}

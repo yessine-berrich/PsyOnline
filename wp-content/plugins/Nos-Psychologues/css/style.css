@@ -1,0 +1,136 @@
+.psychologues-list {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+}
+
+.psychologues-list h2 {
+    text-align: center;
+    color: #2c3e50;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.psychologues-list h2 {
+    position: relative;
+    text-align: center;
+    color: #2c3e50;
+    font-size: 2.5em;
+    font-weight: bold;
+    padding: 15px 0;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.psychologues-list h2::before,
+.psychologues-list h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 3px;
+    width: 50px;
+    background-color: #3498db;
+}
+
+.psychologues-list h2::before {
+    left: 50%;
+    transform: translateX(-100%) translateX(-15px);
+}
+
+.psychologues-list h2::after {
+    right: 50%;
+    transform: translateX(100%) translateX(15px);
+}
+
+.psychologues-list table {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+.psychologues-list thead {
+    background-color: #3498db;
+    color: white;
+}
+
+.psychologues-list th {
+    padding: 12px 15px;
+    text-align: left;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.psychologues-list tr:nth-child(even) {
+    background-color: #f2f2f7;
+}
+
+.psychologues-list tr:hover {
+    background-color: #e6f2ff;
+    transition: background-color 0.3s ease;
+}
+
+.psychologues-list td {
+    padding: 15px;
+    border-bottom: 1px solid #e0e0e0;
+    vertical-align: middle;
+}
+
+.psychologues-list img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.psychologues-list img:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .psychologues-list table {
+        border: 0;
+        box-shadow: none;
+    }
+
+    .psychologues-list table thead {
+        display: none;
+    }
+
+    .psychologues-list table tr {
+        display: block;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .psychologues-list table td {
+        display: block;
+        text-align: right;
+        border-bottom: 1px solid #ddd;
+        padding: 10px;
+    }
+
+    .psychologues-list table td::before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .psychologues-list table td:last-child {
+        border-bottom: 0;
+    }
+
+    .psychologues-list img {
+        max-width: 100%;
+        margin: 0 auto;
+        display: block;
+    }
+}
